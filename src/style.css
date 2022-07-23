@@ -1,23 +1,28 @@
 #content {
     display: grid;
-    grid-template-rows: 1fr 8fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
     grid-template-columns: 1fr;
 }
 #tagline-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: aqua;
 }
-#tagline-container :first-child {
+#tagline-container div {
+    height: 100%;
+}
+#description-container {
     background-color: red;
 }
-#tagline-container :last-child {
+#statement-container {
     background-color: blue;
 }
 #food-types-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: green;
 }
 #food-types-container > div {
     background-color: yellow;
@@ -26,4 +31,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: orange;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
 }
