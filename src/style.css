@@ -7,16 +7,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: aqua;
+    background-color: black;
 }
 #tagline-container div {
     height: 100%;
 }
 #description-container {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #statement-container {
-    background-color: blue;
+    color: white;
 }
 #food-types-container {
     display: flex;
@@ -37,7 +39,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
 }
 #icons {
     display: flex;
