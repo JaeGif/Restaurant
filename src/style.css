@@ -19,6 +19,16 @@
 }
 #statement-container {
     color: white;
+    padding: 20px;
+    display: flex;
+    margin: 50px;
+    max-width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#statement-container p {
+    text-align: center;
 }
 #food-types-container {
     display: flex;
@@ -28,6 +38,10 @@
 }
 #food-types-container > div {
     text-align: center;
+}
+.img-types {
+    border: solid 4px black;
+    border-radius: 5px;
 }
 #georgia-container {
     display: flex;
@@ -39,10 +53,19 @@
     padding: 10px;
     width: 25vw;
 }
+#wiki-button:hover {
+    background-color: black;
+}
+iframe {
+    width: 450px;
+    height: 350px;
+    border: solid 2px black;
+    border-radius: 5px;
+}
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #f2f2f2;
 }
 #icons {
@@ -61,4 +84,16 @@ footer > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+button {
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 12px;
+    width: 100px;
+    height: 50px;
+}
+button:hover {
+    background-color: #DB1F48;
+    border: none;
 }
