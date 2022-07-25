@@ -1,5 +1,6 @@
 import headerCreate from "../dist/header.js";
+import landing from "../dist/landing.js";
 
 const content = document.getElementById('content');
 
-content.appendChild(headerCreate());
+content.append(headerCreate(), landing());

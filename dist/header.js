@@ -16,10 +16,11 @@ const headerCreate = () => {
     bookBtn.textContent = 'Book';
     menuDiv.append(menuBtn, bookBtn);
 
+
     header.append(iconsDiv, menuDiv);
 
 
-    return header
+    return header;
 }
 
-export default headerCreate
+export default headerCreate;
