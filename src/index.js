@@ -1,3 +1,5 @@
-import { header } from "./header.js"
+import headerCreate from "../dist/header.js";
 
-header();
+const content = document.getElementById('content');
+
+content.appendChild(headerCreate());
