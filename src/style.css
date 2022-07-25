@@ -1,3 +1,6 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 #content {
     display: grid;
     grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
@@ -26,6 +29,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: larger;
+}
+#statement-container em {
+    font-size: 9em;
+    color: #DB1F48;
+}
+em {
+    font-size: xx-large;
+    font-style: oblique;
 }
 #statement-container p {
     text-align: center;
@@ -52,6 +64,8 @@
 #georgia-description {
     padding: 10px;
     width: 25vw;
+    text-align: center;
+    font-size: larger;
 }
 #wiki-button:hover {
     background-color: black;
@@ -66,6 +80,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 35vw;
     background-color: #f2f2f2;
 }
 #icons {
@@ -75,15 +90,22 @@ header {
 }
 footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 10px;
     justify-content: space-evenly;
     background-color: #f2f2f2;
 }
 footer > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+.footer-seg {
+    line-height: .01;
+    color: rgb(38, 38, 38);
+}
+.title {
+    text-decoration: underline;
 }
 button {
     color: white;
@@ -92,6 +114,8 @@ button {
     border-radius: 12px;
     width: 100px;
     height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .9em;
 }
 button:hover {
     background-color: #DB1F48;
