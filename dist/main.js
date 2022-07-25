@@ -1,1 +1,1 @@
-console.log("hello world");
+(()=>{"use strict";document.getElementById("content"),document.createElement("div").id="icons",document.createElement("img").setAttribute("src","./img/pomegranate-icon.webp"),document.createElement("p"),document.createElement("div").id="tab-menu",document.createElement("button").textContent="Menu",document.createElement("button").textContent="Book"})();
