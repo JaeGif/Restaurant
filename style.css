@@ -6,6 +6,10 @@ body {
     grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
     grid-template-columns: 1fr;
 }
+#icons img {
+    height: 50px;
+    width: auto;
+}
 #tagline-container {
     display: flex;
     justify-content: flex-end;
