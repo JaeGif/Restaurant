@@ -6,6 +6,10 @@ body {
     grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
     grid-template-columns: 1fr;
 }
+#icons img {
+    height: 50px;
+    width: auto;
+}
 #tagline-container {
     display: flex;
     justify-content: flex-end;
@@ -19,6 +23,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#description-container img {
+    width: 600px;
+    height: auto;
 }
 #statement-container {
     color: white;
@@ -52,6 +60,8 @@ em {
     text-align: center;
 }
 .img-types {
+    width: auto;
+    height: 200px;
     border: solid 4px black;
     border-radius: 5px;
 }
@@ -103,6 +113,14 @@ footer > div {
 .footer-seg {
     line-height: .01;
     color: rgb(38, 38, 38);
+}
+#github-icon, #twitter-icon {
+    height: 40px;
+    width: auto;
+}
+#insta-icon {
+    height: 42px;
+    width: auto;
 }
 .title {
     text-decoration: underline;
