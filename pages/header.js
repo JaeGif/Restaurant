@@ -10,11 +10,13 @@ const header = () => {
 
     const menuDiv = document.createElement('div');
     menuDiv.id = 'tab-menu';
+    const homeBtn = document.createElement('button');
+    homeBtn.textContent = 'Home'
     const menuBtn = document.createElement('button');
     menuBtn.textContent = 'Menu';
     const bookBtn = document.createElement('button');
     bookBtn.textContent = 'Book';
-    menuDiv.append(menuBtn, bookBtn);
+    menuDiv.append(homeBtn, menuBtn, bookBtn);
 
 
     header.append(iconsDiv, menuDiv);
