@@ -6,6 +6,42 @@ body {
     grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
     grid-template-columns: 1fr;
 }
+#menu-content {
+    display: grid;
+    grid-template-rows: 1fr 7fr 7fr 7fr 2fr;
+    grid-template-columns: 1fr;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#eye-catcher-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+}
+#menu-spread-img {
+    width: 40vw;
+    height: auto;
+}
+#wines {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#white-wine {
+    width: 300px;
+    height: auto;
+}
 #icons img {
     height: 50px;
     width: auto;
@@ -64,6 +100,10 @@ em {
     height: 200px;
     border: solid 4px black;
     border-radius: 5px;
+}
+.img-types:hover {
+    border: solid 4px #DB1F48;
+
 }
 #georgia-container {
     display: flex;

@@ -10,7 +10,7 @@
 </head>
 <!-- This is the test/dummy content for the landing page of the restauraunt styling and arranging first before using JS only-->
 <body>
-    <div id="content">
+    <div id="menu-content">
         <!-- header.js -->
         <header>
             <div id="icons">
@@ -18,55 +18,53 @@
                 <p>We Support Ukraine</p>
             </div>
             <div id="tab-menu">
+                <button>Home</button>
                 <button>Menu</button>
                 <button>Book</button>
             </div>
         </header>
 
-        <!-- landing.js -->
-        <div id="tagline-container">
-            <div id="description-container">
-                <img src="./img/landing-hero.webp">
+        <!-- menu.js -->
+        <div id="eye-catcher-container">
+            <div id="eye-p-container">
+                <p>beautiful food</p>
+                <p>beautiful experience</p>
+                <p>beautiful ...</p>
             </div>
-            <div id="statement-container">
-                <p><em>Jaeri</em></p>
-                <p>Georgian Food and Wine Experience</p>
-                <p>A recipe has no soul. You as the cook, must bring soul to the recipe.
-                    Georgia, not the state, the country. Delicious food is best served with wonderful friends.
-                </p>
-                <button>Menu</button>
+            <img id="menu-spread-img" src="../dist/img/food-spread.jpeg">
+        </div>
+
+        <div id="menu">
+            <h2>Menu</h2>
+            <div id="food-types-container">
+                <div>
+                    <h3>Appetizers</h3>
+                    <img class="img-types" src="../dist/img/salad.png">
+                    <p>18</p>
+                </div> 
+                <div>
+                    <h3>Entree</h3>
+                    <img class="img-types" src="../dist/img/full-set-food.webp">
+                    <p>56</p>
+                </div>
+                <div>
+                    <h3>Desserts</h3>
+                    <img class="img-types" src="../dist/img/dessert.jpeg">
+                    <p>24</p>
+                </div>
             </div>
         </div>
         
-        <div id="food-types-container">
+        <div id="wines">
+            <img id="white-wine" src="../dist/img/white-wine.jpeg">
             <div>
-                <a href="#"><img class="img-types" src="./img/full-set-food.webp" height="200px" width="auto"></a>
-                <h4>Food</h4>
-            </div>
-            <div>
-                <a href="#"><img class="img-types" src="./img/wine.jpeg" height="200px" width="auto"></a>
-                <h4>Wine</h4>
-            </div>
-            <div>
-                <a href="#"><img class="img-types" src="./img/strawberry-dessert.jpeg" height="200px" width="auto"></a>
-                <h4>Dessert</h4>
+                <p>“Accept what life offers you and try to drink from every cup.</p>
+                <p>All wines should be tasted; some should only be sipped,</p>
+                <p>but with others, drink the whole bottle.” -- Paulo Coelho</p>
+                <p><em>Villa Maria, Savignon Blanc 108</em></p>
+                <button>Buy</button>
             </div>
         </div>
-
-        <div id="georgia-container">
-            <div id="georgia-description">
-                <p><em>Georgia</em></p>
-                <p>Georgian cuisine and wine have evolved through the centuries, adapting traditions in each era.
-                    One of the most unusual traditions of dining is supra, or Georgian table,
-                     which is also a way of socializing with friends and family.</p>
-                <a href="https://en.wikipedia.org/wiki/Georgia_(country)" target="_blank" rel="noopener noreferrer"><button id="wiki-button">More</button></a>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3021674.208398325!2d41.11447854976491!3d42.3029866271149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1658715607826!5m2!1sen!2s"
-                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-
         <!-- footer.js -->
         <footer>
             <div class="footer-seg">
