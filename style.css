@@ -114,6 +114,14 @@ footer > div {
     line-height: .01;
     color: rgb(38, 38, 38);
 }
+#github-icon, #twitter-icon {
+    height: 40px;
+    width: auto;
+}
+#insta-icon {
+    height: 42px;
+    width: auto;
+}
 .title {
     text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-const headerCreate = () => {
+const header = () => {
     const header = document.createElement('header');
     const iconsDiv = document.createElement('div');
     iconsDiv.id = 'icons';
@@ -23,4 +23,4 @@ const headerCreate = () => {
     return header;
 }
 
-export default headerCreate;
+export default header;
