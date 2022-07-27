@@ -3,12 +3,12 @@ body {
 }
 #home-content {
     display: grid;
-    grid-template-rows: 1fr 16fr 8fr 8fr 1fr;
+    grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
     grid-template-columns: 1fr;
 }
 #menu-content {
     display: grid;
-    grid-template-rows: 1fr 7fr 7fr 7fr 1fr;
+    grid-template-rows: 1fr 7fr 7fr 7fr 2fr;
     grid-template-columns: 1fr;
 }
 #book-content {
