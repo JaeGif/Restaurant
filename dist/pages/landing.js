@@ -18,6 +18,7 @@ const landing = () => {
     const staP = document.createElement('p');
     staP.textContent = 'A recipe has no soul. You as the cook, must bring soul to the recipe. Georgia, not the state, the country. Delicious food is best served with wonderful friends.'
     const menuBtn = document.createElement('button');
+    menuBtn.id = 'menu-button-2'
     menuBtn.textContent = 'Menu';
     staContainerDiv.append(nameP, restaurantP, staP, menuBtn);
 

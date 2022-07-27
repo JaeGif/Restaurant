@@ -6,7 +6,7 @@ import {removeChildren} from "../dist/functions/reload.js";
 import {book, quoteBlock} from "../dist/pages/book.js"
 const content = document.getElementById('content');
 
-
+// adds listeners for tab switches
 const tabListeners = () => {
     const menuBtn = document.getElementById('menu-button');
     menuBtn.addEventListener('click', () => {
@@ -27,12 +27,18 @@ const tabListeners = () => {
     })
 };
 
+// load individual pages
 const loadHome = () => {
     const homePage = document.createElement('div');
     homePage.id = 'home-content';
     content.appendChild(homePage);
     homePage.append(header(), landing(), foodTypesContainer(), georgiaInfo(), footer());
     tabListeners();
+    const menuBtn2 = document.getElementById('menu-button-2');
+    menuBtn2.addEventListener('click', () => {
+        removeChildren();
+        loadMenu();
+    });
 };
 
 const loadMenu = () => {
@@ -51,4 +57,6 @@ const loadBook = () => {
     bookPage.append(header(), book(), quoteBlock(), footer());
     tabListeners();
 }
+
+// first visit loads homepage
 loadHome();
