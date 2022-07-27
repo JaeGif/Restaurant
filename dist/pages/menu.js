@@ -13,7 +13,7 @@ const eyeCatch = () => {
     eyePContainerDiv.append(p1, p2, p3);
 
     const spreadImg = document.createElement('img');
-    spreadImg.setAttribute('src', '../dist/img/food-spread.jpeg');
+    spreadImg.setAttribute('src', '../img/food-spread.jpeg');
     spreadImg.id = 'menu-spread-img';
 
     eyeCatchContainerDiv.append(eyePContainerDiv, spreadImg);
@@ -43,13 +43,13 @@ const menu = () => {
     desH3.textContent = 'Parfait';
 
     const appImg = document.createElement('img');
-    appImg.setAttribute('src', '../dist/img/salad.png');
+    appImg.setAttribute('src', '../img/salad.png');
     appImg.className = 'img-types';
     const entImg = document.createElement('img');
-    entImg.setAttribute('src', '../dist/img/full-set-food.webp');
+    entImg.setAttribute('src', '../img/full-set-food.webp');
     entImg.className = 'img-types';
     const desImg = document.createElement('img');
-    desImg.setAttribute('src', '../dist/img/dessert.jpeg')
+    desImg.setAttribute('src', '../img/dessert.jpeg')
     desImg.className = 'img-types';
 
     const appP = document.createElement('p');
@@ -77,7 +77,7 @@ const wine = () => {
 
     const wineImg = document.createElement('img');
     wineImg.id = 'white-wine';
-    wineImg.setAttribute('src', '../dist/img/white-wine.jpeg');
+    wineImg.setAttribute('src', '../img/white-wine.jpeg');
 
     const desDiv = document.createElement('div');
     const p1 = document.createElement('p');
