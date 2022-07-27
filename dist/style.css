@@ -204,6 +204,7 @@ header {
     justify-content: space-evenly;
     gap: 35vw;
     background-color: #f2f2f2;
+    height: 50px;
 }
 #icons {
     display: flex;

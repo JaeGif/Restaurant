@@ -15,13 +15,13 @@ const book = () => {
     const span4 = document.createElement('span');
 
     const locImg = document.createElement('img');
-    locImg.setAttribute('src', '../img/location.png');
+    locImg.setAttribute('src', './img/location.png');
     const phoImg = document.createElement('img');
-    phoImg.setAttribute('src', '../img/phone.png');
+    phoImg.setAttribute('src', './img/phone.png');
     const emaImg = document.createElement('img');
-    emaImg.setAttribute('src', '../img/email.png')
+    emaImg.setAttribute('src', './img/email.png')
     const gitImg = document.createElement('img');
-    gitImg.setAttribute('src', '../img/github.png');
+    gitImg.setAttribute('src', './img/github.png');
 
     locImg.className = 'icons';
     phoImg.className = 'icons';
@@ -101,7 +101,7 @@ const quoteBlock = () => {
     reserveQuoteContainerDiv.id = 'reserve-quote';
 
     const foodImg = document.createElement('img');
-    foodImg.setAttribute('src', '../img/big-ish-dish.jpeg');
+    foodImg.setAttribute('src', './img/big-ish-dish.jpeg');
 
     const pContainer = document.createElement('div');
     pContainer.id = 'p-container';

@@ -1,9 +1,9 @@
-import header from "../dist/pages/header.js";
-import {landing, foodTypesContainer, georgiaInfo} from "../dist/pages/landing.js";
-import footer from "../dist/pages/footer.js";
-import {eyeCatch, menu, wine} from "../dist/pages/menu.js";
-import {removeChildren} from "../dist/functions/reload.js";
-import {book, quoteBlock} from "../dist/pages/book.js"
+import header from "./pages/header.js";
+import {landing, foodTypesContainer, georgiaInfo} from "./pages/landing.js";
+import footer from "./pages/footer.js";
+import {eyeCatch, menu, wine} from "./pages/menu.js";
+import {removeChildren} from "./functions/reload.js";
+import {book, quoteBlock} from "./pages/book.js"
 const content = document.getElementById('content');
 
 // adds listeners for tab switches
