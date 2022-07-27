@@ -2,15 +2,9 @@ import header from "../dist/pages/header.js";
 import {landing, foodTypesContainer, georgiaInfo} from "../dist/pages/landing.js";
 import footer from "../dist/pages/footer.js";
 import {eyeCatch, menu, wine} from "../dist/pages/menu.js";
-
+import {removeChildren} from "../dist/functions/reload.js";
 const content = document.getElementById('content');
 
-const removeChildren = () => {
-    const content = document.getElementById('content');
-    while (content.children.length > 0) {
-        content.children[0].remove();
-    };
-};
 
 const tabListeners = () => {
     const menuBtn = document.getElementById('menu-button');
@@ -25,6 +19,12 @@ const tabListeners = () => {
         loadHome();
         console.log('passed-hopme');
     });
+
+    const bookBtn = document.getElementById('book-button');
+    bookBtn.addEventListener('click', () => {
+        removeChildren();
+        loadBook();
+    })
 };
 
 const loadHome = () => {
@@ -44,4 +44,11 @@ const loadMenu = () => {
     tabListeners();
 }
 
+const loadBook = () => {
+    const bookPage = document.createElement('div');
+    bookPage.id = 'book-content';
+    content.appendChild(bookPage);
+    bookPage.append(header(), footer());
+    tabListeners();
+}
 loadHome();

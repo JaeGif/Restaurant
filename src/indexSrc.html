@@ -10,7 +10,7 @@
 </head>
 <!-- This is the test/dummy content for the landing page of the restauraunt styling and arranging first before using JS only-->
 <body>
-    <div id="menu-content">
+    <div id="book-content">
         <!-- header.js -->
         <header>
             <div id="icons">
@@ -24,45 +24,38 @@
             </div>
         </header>
 
-        <!-- menu.js -->
-        <div id="eye-catcher-container">
-            <div id="eye-p-container">
-                <p>beautiful food</p>
-                <p>beautiful experience</p>
-                <p>beautiful ...</p>
+        <!-- book.js -->
+        <div id="reservation-container">
+            <h3>Make a Reservation</h3>
+            <div id="info-alignment">
+                <div id="info-div">
+                    <span><img class="icons" src="../dist/img/location.png"><p>1234 Seven Hundreth St. Georgia, Georgia 12345</p></span>
+                    <span><img class="icons" src="../dist/img/phone.png"><p>123-456-1234</p></span>
+                    <span><img class="icons" src="../dist/img/email.png"><p>fakemail@cooladdress.com</p></span>
+                    <span><a href="https://github.com/JaeGif"><img class="icons" src="../dist/img/github.png"></a><p>Github</p></span>
+                </div>
+                <div id="contact">
+                    <div class="input-container">
+                        <label for="name">First Name</label>
+                        <input type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                    <div id="checkbox">
+                        <label for="subscribe">Subscribe for Updates?</label>
+                        <input type="checkbox" name="subscribe">
+                    </div>
+                </div>
             </div>
-            <img id="menu-spread-img" src="../dist/img/food-spread.jpeg">
         </div>
 
-        <div id="menu">
-            <h2>Menu</h2>
-            <div id="food-types-container">
-                <div>
-                    <h3>Appetizers</h3>
-                    <img class="img-types" src="../dist/img/salad.png">
-                    <p>18</p>
-                </div> 
-                <div>
-                    <h3>Entree</h3>
-                    <img class="img-types" src="../dist/img/full-set-food.webp">
-                    <p>56</p>
-                </div>
-                <div>
-                    <h3>Desserts</h3>
-                    <img class="img-types" src="../dist/img/dessert.jpeg">
-                    <p>24</p>
-                </div>
-            </div>
-        </div>
-        
-        <div id="wines">
-            <img id="white-wine" src="../dist/img/white-wine.jpeg">
-            <div>
-                <p>“Accept what life offers you and try to drink from every cup.</p>
-                <p>All wines should be tasted; some should only be sipped,</p>
-                <p>but with others, drink the whole bottle.” -- Paulo Coelho</p>
-                <p><em>Villa Maria, Savignon Blanc 108</em></p>
-                <button>Buy</button>
+        <div id="reserve-quote">
+            <img src="../dist/img/big-ish-dish.jpeg">
+            <div id="p-container">
+                <p>"A table for TONIGHT should certainly</p> 
+                <p>have been booked years before."</p>
             </div>
         </div>
         <!-- footer.js -->
