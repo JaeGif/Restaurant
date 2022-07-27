@@ -3,6 +3,7 @@ import {landing, foodTypesContainer, georgiaInfo} from "../dist/pages/landing.js
 import footer from "../dist/pages/footer.js";
 import {eyeCatch, menu, wine} from "../dist/pages/menu.js";
 import {removeChildren} from "../dist/functions/reload.js";
+import {book, quoteBlock} from "../dist/pages/book.js"
 const content = document.getElementById('content');
 
 
@@ -17,7 +18,6 @@ const tabListeners = () => {
     homeBtn.addEventListener('click', () => {
         removeChildren();
         loadHome();
-        console.log('passed-hopme');
     });
 
     const bookBtn = document.getElementById('book-button');
@@ -48,7 +48,7 @@ const loadBook = () => {
     const bookPage = document.createElement('div');
     bookPage.id = 'book-content';
     content.appendChild(bookPage);
-    bookPage.append(header(), footer());
+    bookPage.append(header(), book(), quoteBlock(), footer());
     tabListeners();
 }
 loadHome();

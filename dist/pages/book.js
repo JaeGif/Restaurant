@@ -3,6 +3,7 @@ const book = () => {
     reserveContainerDiv.id = 'reservation-container';
 
     const h3 = document.createElement('h3');
+    h3.textContent = 'Make a Reservation';
     const infoContainerDiv = document.createElement('div');
     infoContainerDiv.id = 'info-alignment';
 
@@ -50,16 +51,68 @@ const book = () => {
     const contactDiv = document.createElement('div');
     contactDiv.id = 'contact';
 
-    const inputContainerDiv1 = document.createElement('div');
-    const inputContainerDiv2 = document.createElement('div');
-    const inputContainerDiv3 = document.createElement('div');
+    const inputContainerDivName = document.createElement('div');
+    const inputContainerDivEmail = document.createElement('div');
+    const inputContainerDivSubscribe = document.createElement('div');
+    inputContainerDivName.className = 'input-container';
+    inputContainerDivEmail.className = 'input-container';
+    inputContainerDivSubscribe.id = 'checkbox';
 
+    const nameLabel = document.createElement('label');
+    nameLabel.setAttribute('for', 'name');
+    nameLabel.textContent = 'First Name';
 
+    const emailLabel = document.createElement('label');
+    emailLabel.setAttribute('for', 'email');
+    emailLabel.textContent = 'Email';
+
+    const subscribeLabel = document.createElement('label');
+    subscribeLabel.setAttribute('for', 'subscribe');
+    subscribeLabel.textContent = 'Subscribe for Updates?';
+
+    const nameInput = document.createElement('input');
+    nameInput.setAttribute('type', 'text');
+    nameInput.setAttribute('placeholder', 'Name');
+    nameInput.setAttribute('name', 'name');
+
+    const emailInput = document.createElement('input');
+    emailInput.setAttribute('type', 'email');
+    emailInput.setAttribute('placeholder', 'Email');
+    emailInput.setAttribute('name', 'email');
+
+    const subscribeInput = document.createElement('input');
+    subscribeInput.setAttribute('type', 'checkbox');
+    subscribeInput.setAttribute('name', 'subscribe');
+
+    inputContainerDivName.append(nameLabel, nameInput);
+    inputContainerDivEmail.append(emailLabel, emailInput);
+    inputContainerDivSubscribe.append(subscribeLabel, subscribeInput);
+
+    contactDiv.append(inputContainerDivName, inputContainerDivEmail, inputContainerDivSubscribe);
     infoContainerDiv.append(infoDiv, contactDiv);
 
-
     reserveContainerDiv.append(h3, infoContainerDiv);
+
     return reserveContainerDiv;
 };
 
-export default reserveContainerDiv;
+const quoteBlock = () => {
+    const reserveQuoteContainerDiv = document.createElement('div');
+    reserveQuoteContainerDiv.id = 'reserve-quote';
+
+    const foodImg = document.createElement('img');
+    foodImg.setAttribute('src', '../dist/img/big-ish-dish.jpeg');
+
+    const pContainer = document.createElement('div');
+    pContainer.id = 'p-container';
+    const p1 = document.createElement('p');
+    p1.textContent = '"A table for TONIGHT should certainly';
+    const p2 = document.createElement('p');
+    p2.textContent = 'have been booked years before."';
+    pContainer.append(p1, p2);
+
+    reserveQuoteContainerDiv.append(foodImg, pContainer);
+
+    return reserveQuoteContainerDiv;
+}
+export {book, quoteBlock};
