@@ -30,7 +30,7 @@ body {
     font-style: italic;
     color: white;
     background-color: black;
-    background-image: url('../dist/img/background.jpeg');
+    background-image: url('./img/background.jpeg');
     background-repeat: no-repeat;
     background-position: center;
 }
