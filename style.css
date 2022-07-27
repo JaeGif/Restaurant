@@ -161,6 +161,9 @@ em {
     align-items: center;
     background-color: white;
 }
+#food-types-container h3 {
+    font-size: 1em;
+}
 #food-types-container > div {
     text-align: center;
 }

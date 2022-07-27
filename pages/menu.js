@@ -38,9 +38,9 @@ const menu = () => {
     const appH3 = document.createElement('h3');
     const entH3 = document.createElement('h3');
     const desH3 = document.createElement('h3');
-    appH3.textContent = 'Appetizers';
+    appH3.textContent = 'Salad';
     entH3.textContent = 'Entree';
-    desH3.textContent = 'Desserts';
+    desH3.textContent = 'Parfait';
 
     const appImg = document.createElement('img');
     appImg.setAttribute('src', '../dist/img/salad.png');
