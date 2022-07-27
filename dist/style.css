@@ -1,7 +1,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#content {
+#home-content {
     display: grid;
     grid-template-rows: 1fr 16fr 8fr 8fr 2fr;
     grid-template-columns: 1fr;
